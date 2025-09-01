@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <!--js inline example-->
+        <button onclick="alert('Inline JS Example')"> click me Inline</button>
+
+        <button onclick="showVeg1()"> click me internal</button>
+        <!--external example-->
+                <button onclick="showVeg2()"> click me external</button>
+
+    </h1>
+    <script>
+        function showVeg1(){
+            alert ("this is internal example");
+        }
+    </script>
+        <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>
