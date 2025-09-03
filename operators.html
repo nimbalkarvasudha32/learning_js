@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Arithmatic operators -,+,*,/,%,++,--,**-->
+    <script>
+        var a=10;
+        var b=3;
+        var c=a**b;//13//binary 
+        c++;//unary
+        c--;
+        c++;
+        c++;
+        c++;
+        c--;//14
+        document.write(c);
+        document.write("<br>");
+    </script>
+    <!--assigment opreators =,+=,-=,*=,**=,%=,-->
+    <script>
+        var x = 10;
+        var y = 3;
+        x+=y;
+         document.write(x);
+         document.write("<br>")
+         document.write(y);
+        document.write("<br>");
+
+    </script>
+    <script>
+        //comparison operators ==,===,<,>,<=,>=,!=
+        var p=13;
+        var q=13;
+        if(p==q){
+            document.write("true");
+
+        }else{
+            document.write("false");
+        }
+        
+    </script>
+    <!--logical opreator start && || ?-->
+    <script>
+        var age=19;
+        if(age>=18 && age<=100){
+            document.write("elegible for vote");
+        }
+        else{
+            document.write("not elegible for vote");
+        }
+         
+       // var day="sunday";
+       // if(day==="saturday" || day==="sunday"){
+         //   document.write("its weekend");
+
+        //}else{
+         //   document.write("its weekdays")
+        //}
+        var age=17;
+        var elegible=(age>=18)? "elegible for vote":"not elgible";//?ternary opeator
+        document.write(elegiblity);
+    </script>
+</body>
+</html>

@@ -23,5 +23,36 @@
        // pi=3.9;//reassign not allowed
         document.write(pi);
     </script>
+    <!--global scope start-->
+    <script>
+        var x= 101;
+        let y=102;
+        const z=103;
+         document.write("<br>");
+        function scopeExample(){
+            var x= 1;//function scope
+            let y=2;//block value
+            const z= 3;//block
+            if(true){//inside the variable
+                 var x= 10; //reassign the variable
+                let y=20; //y only for this block
+                const z= 30; //z for this block
+                document.write(x);
+                document.write(y);
+                document.write(z);
+                document.write("<br>");
+            }
+            //outside the block but inside the function
+                document.write(x);
+                document.write(y);
+                document.write(z);
+                document.write("<br>");
+        }
+        //call function
+        scopeExample() ;
+                 document.write(x);
+                document.write(y);
+                document.write(z);
+    </script>
 </body>
 </html>
